@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid black;
+    /* background: linear-gradient(90deg,rgb(12, 12, 80),rgb(0, 166, 255),rgb(12, 12, 80)); */
+    /* background: radial-gradient(circle at center, #00aaff 0%, #004e92 50%, #000428 100%); */
+    background: linear-gradient(270deg, #000428, #004e92, #00aaff, #004e92, #000428);
+    background-size: 1000% 1000%;
+    animation: flow 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+@keyframes flow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.inner{
+    width: 500px;
+    height: 650px;
+    background-color: #fff;
+    border: 4px solid rgb(95, 103, 151);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    font-family: "Inter", sans-serif;
+    h1{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .secline{
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        animation: lg 1.5s ease forwards;
+    }
+
+
+}
+
+.form{
+    /* border: gray 1px solid; */
+    padding-top: 2rem;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    .name{
+        font-size: 2.25rem;
+        border: gray solid 2px;
+        border-radius: 10px;
+        display: flex;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 0.25rem;
+        padding-top: 0.25rem;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.3rem;
+
+        p{
+            font-size: 1.5rem;
+            font-weight: 600;
+            position: relative;
+            top: 3px;
+        }
+        .stiker{
+            
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .input{
+           height: 40px;
+           width: 200px;
+           padding: 0;
+           font-size: 1.5rem;
+           border: 0px;
+           outline: none;
+           padding-left: 1rem;
+           position: relative;
+           top: 5px;
+        }
+        
+    }
+    .name::placeholder{
+        font-size: 0.5rem;
+    }
+}
+
+#year{
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    #y0{
+        color: gray;
+    }
+}
+
+#branch{
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    #y0{
+        color: gray;
+    }
+}
+#mail{
+    font-size: 1.1rem;
+}
+
+select {
+    color: gray;
+  }
+
+  select option {
+    color: black;
+  }
+
+  select:focus,
+  select:valid {
+    color: black;
+  }
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    /* border: solid black 2px; */
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.reset-btn{
+    background-color: rgb(211, 85, 85);
+    animation: rej 0.75s ease-in-out infinite alternate;
+}
+
+@keyframes rej {
+  from {
+    box-shadow:inset 0 0 5px #ff4d4d,inset 0 0 10px #ff4d4d,inset 0 0 20px #ff4d4d;
+  }
+  to {
+    box-shadow:inset 0 0 10px #ff4d4d,inset 0 0 20px #ff4d4d,inset 0 0 40px #ff4d4d;
+  }
+}
+
+.reset-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px red;
+}
+
+
+/*//////////////////////////////////////////////////////////////*/
+
+
+.submit-btn{
+    background-color:#69be6c;
+    animation: sub 0.75s ease-in-out infinite alternate;
+}
+
+@keyframes sub {
+  from {
+    box-shadow:inset 0 0 20px #004700,inset 0 0 20px #004700,inset 0 0 20px #004700;
+  }
+  to {
+    box-shadow:inset 0 0 20px #004700,inset 0 0 40px #004700,inset 0 0 40px #004700;
+  }
+}
+
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0ff;
+}

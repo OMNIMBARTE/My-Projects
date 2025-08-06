@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <div class="container" id="outcontainer">
+
+        <div class="inner" id="inner1">
+            
+            <h1>Apply to join Mr-Coders</h1>
+            <div class="secline">
+                <img src="mrlogo3.png" alt="" class="logo">
+                <h2>Mr-Coders</h2>
+            </div>
+            <div class="data">
+
+                <form action="" class="form" id="form1">
+                    <div class="name">
+                       <div class="stiker">👤 <p>Name:</p></div> <input type="text" class="input" id="person" placeholder="name" required>
+                    </div>
+
+                    <div class="name">
+                        <div class="stiker">🗓 <p>Year:</p></div> 
+                        <select name="" class="input" id="year" required>
+                            <option value="" disabled selected id="y0">Select your year</option>
+                            <option value="1">1st</option>
+                            <option value="2">2nd</option>
+                            <option value="3">3rd</option>
+                            <option value="4">4th</option>
+                        </select>
+                    </div>
+
+                    <div class="name">
+                        <div class="stiker">🏫 <p>Branch:</p></div>
+                        <select name="" class="input" id="branch" required>
+                            <option value="" disabled selected id="y0">Select your branch</option>
+                            <option value="1">CSE</option>
+                            <option value="2">ECE</option>
+                        </select>
+                    </div>
+
+                    <div class="name">
+                       <div class="stiker">🛠️ <p>Skills:</p></div> <input type="text" class="input" id="skill" placeholder="......" >
+                    </div>
+
+                    <div class="name">
+                       <div class="stiker">📧 <p>Gmail:</p></div> <input type="email" class="input" id="mail" placeholder="..@gmail.com" required>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="reset" class="btn reset-btn">Reset</button>
+                        <button type="submit" class="btn submit-btn" id="sub-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="form.js"></script>
+
+</body>
+</html>

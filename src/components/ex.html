@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 4px solid black;
+            background-color: bisque;
+            height: 100vh;
+            width: 100vw;
+            padding: 3px;
+        }
+
+        .box{
+            border: 2px solid black;
+            width: 20%;
+            height: 60px;
+            border-radius: 8px;
+            background-color: blue;
+            position: relative;
+            animation-name: rightmoves;
+            animation-duration: 1750ms;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;
+            animation-timing-function: linear;
+       } 
+
+@keyframes rightmoves{
+            from{
+                left: 0;
+                top: 0;
+            }
+
+            to{
+                left: 1000px;
+                top: 0;
+            }
+            
+        }
+
+
+        .box2{
+            border: 2px solid black;
+            width: 20%;
+            height: 60px;
+            border-radius: 8px;
+            margin: 5px;
+            background-color: blue;
+            position: relative;
+            animation: 2s linear 1s infinite alternate-reverse none running bottom;
+        }
+
+@keyframes bottom{
+    from{
+        left: 0;
+        top: 550px;
+    }
+
+    to{
+        left: 1000px;
+        top: 550px;
+    }
+    
+}
+
+    .circle{
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            margin: 5px;
+            background-color: blue;
+            position: relative;
+            top:25%;
+            left:45%;
+            animation: 10s linear 1s infinite alternate none running circle;
+        }   
+        
+    @keyframes circle{
+        0%{
+            left: 1%;
+            top: -75px;
+        }
+        30%{
+            left: 90%;
+            top: -75px;
+        }
+        60%{
+            left: 1%;
+            top: 430px;
+        }
+        100%{
+            left: 90%;
+            top: 430px;
+        }
+    
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+         
+        <div class="box2"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
